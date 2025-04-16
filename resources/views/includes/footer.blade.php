@@ -29,9 +29,9 @@
                     <div class="col-12 col-lg-6">
                         <h5>Alamat</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Jawa Timur</a></li>
+                            <li><a href="#">Jawa Tengah</a></li>
                             <li><a href="#">Indonesia</a></li>
-                            <li><a href="#">+62 857-1505-3502</a></li>
+                            <li><a href="#">+62 85801039230</a></li>
                             <li><a href="#">support@intanbahari.com</a></li>
                         </ul>
                     </div>

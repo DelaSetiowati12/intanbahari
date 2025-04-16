@@ -66,8 +66,8 @@
                             <div class="card-travel text-center d-flex flex-column"
                                 style="background-image:
                             url('{{ $item->galleries->count() ? Storage::url($item->galleries->first()->image) : '' }}');">
-                                <div style="color:black;" class="travel-country">{{ $item->location }}</div>
-                                <div style="color:black;" class="travel-location">{{ $item->title }}</div>
+                                <div style="color:rgb(250, 250, 250);" class="travel-country">{{ $item->location }}</div>
+                                <div style="color:rgb(255, 255, 255);" class="travel-location">{{ $item->title }}</div>
                                 <div class="travel-button mt-auto">
                                     <a href="{{ route('detail', $item->slug) }}" class="btn btn-primary btn-lg px-4">
                                         Pilih
@@ -86,10 +86,7 @@
                 <h2 style="color:blue;">Lokasi Wisata</h2>
             </center>
             <div class="container text-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d37850.64062022493!2d108.99387466242668!3d-7.690681708673612!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x2e6572b22a8ce523%3A0x5027a76e3571db0!2sKutawaru%2C%20Kec.%20Cilacap%20Tengah%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah!3m2!1d-7.6815633!2d108.97993869999999!5e1!3m2!1sid!2sid!4v1740145411325!5m2!1sid!2sid"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.8668626781923!2d108.990103!3d-7.697433999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e650d6a74228415%3A0xae62468cc3ceb6ad!2sKutawaru%20Cilacap!5e0!3m2!1sid!2sus!4v1742293616067!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- <div class="container">
                     <div class="row">
@@ -128,9 +125,9 @@
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card card-testimonial text-center">
                             <div class="testimonial-content">
-                                <img src="frontend/images/ferina.png" alt="User 1" class="mb-4 rounded-circle">
-                                <h3 class="mb-4">Ferina Tri Amalia</h3>
-                                <h4>PROJECT MANAGER</h4>
+                                <img src="frontend/images/EDI.jpg" alt="User 1" style="height: 230px; width: 230px;" class="mb-4 rounded-circle">
+                                <h3 class="mb-4"> EDI PURNOMO</h3>
+                                <h4>KETUA PENGELOLA</h4>
                             </div>
                             <hr />
                             <!--  <p class="trip-to mt-2">
@@ -142,9 +139,9 @@
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card card-testimonial text-center">
                             <div class="testimonial-content">
-                                <img src="frontend/images/della1.png" alt="User 2" class="mb-4 rounded-circle">
-                                <h3 class="mb-4">Della Stiowati</h3>
-                                <h4>CEO & FOUNDER</h4>
+                                <img src="frontend/images/SARMAN.jpg" alt="User 2" class="mb-4 rounded-circle" style="height: 230px; width: 230px;" >
+                                <h3 class="mb-4">SARMAN SUSANTO</h3>
+                                <h4>WAKIL PENGELOLA</h4>
                             </div>
                             <hr />
                             <!--   <p class="trip-to mt-2">
@@ -156,9 +153,9 @@
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card card-testimonial text-center">
                             <div class="testimonial-content">
-                                <img src="frontend/images/amelia.png" alt="User 2" class="mb-4 rounded-circle">
-                                <h3 class="mb-4">Amelia Tri R</h3>
-                                <h4>CEO & FOUNDER</h4>
+                                <img src="frontend/images/SITI.jpg" style="height: 230px; width: 230px;"  alt="User 2" class="mb-4 rounded-circle">
+                                <h3 class="mb-4">SITI KOTIJAH</h3>
+                                <h4>SEKETARIS</h4>
                             </div>
                             <hr />
                             <!--   <p class="trip-to mt-2">
@@ -296,5 +293,32 @@
             </div>
         </section> -->
 
+        <div id="whatsapp-chat">
+            <a href="https://api.whatsapp.com/send?phone=6285715053502" target="_blank">
+                <img src="frontend/images/wa.png" alt="WhatsApp Chat">
+            </a>
+        </div>
+
     </main>
 @endsection
+
+<style>
+    #whatsapp-chat {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       z-index: 9999;
+   }
+
+   #whatsapp-chat img {
+       width: 60px;
+       height: auto;
+       border-radius: 50%;
+       cursor: pointer;
+       transition: transform 0.3s ease;
+   }
+
+   #whatsapp-chat img:hover {
+       transform: scale(1.1);
+   }
+</style>

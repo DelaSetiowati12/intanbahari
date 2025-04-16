@@ -3,7 +3,7 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
-      <div class="sidebar-brand-icon rotate-n-15">Intan Bahari</div><i class="fas fa-map-marked"></i>
+      <div class="sidebar-brand-icon">Intan Bahari</div><i class="fas fa-map-marked"></i>
     </a>
 
     <!-- Divider -->
